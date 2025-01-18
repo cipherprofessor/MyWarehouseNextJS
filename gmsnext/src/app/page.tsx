@@ -19,6 +19,9 @@ import HeroUITextDescription from "@/components/ui/HeroUI/TextArea/Description";
 import HeroUITimeInput from "@/components/ui/HeroUI/TimeInput/TimeInput";
 import HeroUIColoursTooltip from "@/components/ui/HeroUI/Tooltip/ColorsTooltip";
 import HeroUIUsername from "@/components/ui/HeroUI/User/UserName";
+import { AceternityUIAnimatedTestimonialsUse } from "@/components/ui/Aceternity/AnimatedTestimonials/AnimatedTestimonialsUse";
+
+// import { AceternityUIAnimatedTestimonialsDemo } from "@/components/ui/Aceternity/AnimatedTestimonials/AnimatedTestimonialsUSe";
 
 export default function Home() {
   return (
@@ -48,6 +51,7 @@ export default function Home() {
     {/* <HeroUITimeInput/> */}
     {/* <HeroUIColoursTooltip /> */}
     {/* <HeroUIUsername /> */}
+    <AceternityUIAnimatedTestimonialsUse />
     </>
     
   );
