@@ -12,6 +12,13 @@ import HeroUIListAvtarSelection from "@/components/ui/HeroUI/ListBox/ListAvtarSe
 import HeroUIDropDown2Select from "@/components/ui/HeroUI/DropDownSelect/DropDown2Select/DropDown2Select";
 import HeroUiDropDownAssignTo from "@/components/ui/HeroUI/DropDownSelect/DropDown2Select/DropDownAssignTo";
 import HeroUISwitchDarkLightModeIcon from "@/components/ui/HeroUI/Switch/SwitchDarkLightModeIcon";
+import HeroUIModernTableSearch from "@/components/ui/HeroUI/Table/ModernTableSearch";
+import HeroUITabWithForm from "@/components/ui/HeroUI/Tabs/TabWithForm";
+import HeroUIJustTabs from "@/components/ui/HeroUI/Tabs/JustTabs";
+import HeroUITextDescription from "@/components/ui/HeroUI/TextArea/Description";
+import HeroUITimeInput from "@/components/ui/HeroUI/TimeInput/TimeInput";
+import HeroUIColoursTooltip from "@/components/ui/HeroUI/Tooltip/ColorsTooltip";
+import HeroUIUsername from "@/components/ui/HeroUI/User/UserName";
 
 export default function Home() {
   return (
@@ -33,7 +40,14 @@ export default function Home() {
     {/* <HeroUIListAvtarSelection /> */}
     {/* <HeroUIDropDown2Select />  */}
     {/* <HeroUiDropDownAssignTo /> */}
-    <HeroUISwitchDarkLightModeIcon />
+    {/* <HeroUISwitchDarkLightModeIcon /> */}
+    {/* <HeroUIModernTableSearch /> */}
+    {/* <HeroUITabWithForm /> */}
+    {/* <HeroUIJustTabs/> */}
+    {/* <HeroUITextDescription /> */}
+    {/* <HeroUITimeInput/> */}
+    {/* <HeroUIColoursTooltip /> */}
+    {/* <HeroUIUsername /> */}
     </>
     
   );

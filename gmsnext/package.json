@@ -13,13 +13,17 @@
     "@heroui/date-input": "^2.3.8",
     "@heroui/date-picker": "^2.3.9",
     "@heroui/form": "^2.1.8",
+    "@heroui/input": "^2.4.9",
     "@heroui/listbox": "^2.3.9",
     "@heroui/react": "^2.6.13",
     "@heroui/select": "^2.4.9",
     "@heroui/switch": "^2.2.8",
     "@heroui/system": "^2.4.6",
     "@heroui/table": "^2.2.8",
+    "@heroui/tabs": "^2.2.7",
     "@heroui/theme": "^2.4.5",
+    "@heroui/tooltip": "^2.2.7",
+    "@heroui/user": "^2.2.6",
     "@hookform/resolvers": "^3.10.0",
     "@internationalized/date": "^3.6.0",
     "@radix-ui/react-label": "^2.1.1",
@@ -51,5 +55,11 @@
     "eslint": "^9",
     "eslint-config-next": "15.1.5",
     "@eslint/eslintrc": "^3"
+  },
+  "overrides": {
+    "framer-motion": {
+      "react": "19.0.0-rc-66855b96-20241106",
+      "react-dom": "19.0.0-rc-66855b96-20241106"
+    }
   }
 }

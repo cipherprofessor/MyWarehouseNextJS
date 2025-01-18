@@ -1,4 +1,5 @@
-import React, { Key } from "react";
+import React from "react";
+import { Key } from "@react-types/shared";
 import {
   Table,
   TableHeader,
@@ -350,9 +351,9 @@ const statusColorMap: Record<string, "success" | "danger" | "warning"> = {
 
 const INITIAL_VISIBLE_COLUMNS = ["name", "role", "status", "actions"];
 
-export default function App() {
+export default function HeroUIModernTableSearch() {
   const [filterValue, setFilterValue] = React.useState("");
-  const [selectedKeys, setSelectedKeys] = React.useState<"all" | Iterable<Key>>(new Set<Key>());
+  const [selectedKeys, setSelectedKeys] = React.useState<"all" | Set<Key>>(new Set<Key>());
   const [visibleColumns, setVisibleColumns] = React.useState(new Set(INITIAL_VISIBLE_COLUMNS));
   const [statusFilter, setStatusFilter] = React.useState<Set<string>>(new Set(["all"]));
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
@@ -371,8 +372,12 @@ export default function App() {
     return columns.filter((column) => Array.from(visibleColumns).includes(column.uid));
   }, [visibleColumns]);
 
+  let filteredUsers = users.filter((user) =>
+    user.name.toLowerCase().includes(filterValue.toLowerCase())
+  );
+
   const filteredItems = React.useMemo(() => {
-    let filteredUsers = [...users];
+    
 
     if (hasSearchFilter) {
       filteredUsers = filteredUsers.filter((user) =>
@@ -387,6 +392,8 @@ export default function App() {
 
     return filteredUsers;
   }, [users, filterValue, statusFilter]);
+
+  
 
   const pages = Math.ceil(filteredItems.length / rowsPerPage);
 
@@ -623,7 +630,7 @@ export default function App() {
       classNames={{
         wrapper: "max-h-[382px]",
       }}
-      selectedKeys={selectedKeys}
+      selectedKeys={selectedKeys as "all" | Iterable<Key>}
       selectionMode="multiple"
       sortDescriptor={sortDescriptor}
       topContent={topContent}
