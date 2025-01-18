@@ -19,7 +19,12 @@ import HeroUITextDescription from "@/components/ui/HeroUI/TextArea/Description";
 import HeroUITimeInput from "@/components/ui/HeroUI/TimeInput/TimeInput";
 import HeroUIColoursTooltip from "@/components/ui/HeroUI/Tooltip/ColorsTooltip";
 import HeroUIUsername from "@/components/ui/HeroUI/User/UserName";
-import { AceternityUIAnimatedTestimonialsUse } from "@/components/ui/Aceternity/AnimatedTestimonials/AnimatedTestimonialsUse";
+import { AcUIAnimatedTooltipPreview } from "@/components/ui/Aceternity/AnimatedTooltip/AnimatedTooltipPreview";
+import { AcUIFeaturesSectionDemo } from "@/components/ui/Aceternity/FeatureSection/FeatureGridText/FeatureGridText";
+import { AcUILayoutGridDemo } from "@/components/ui/Aceternity/LayoutGrid/LayoutGridDemo";
+import { AcUIMeteorsDemo } from "@/components/ui/Aceternity/Meteors/MeteorsDemo";
+import { AcUISidebarDemoUse } from "@/components/ui/Aceternity/SideBar/SidebarUse";
+// import { AceternityUIAnimatedTestimonialsUse } from "@/components/ui/Aceternity/AnimatedTestimonials/AnimatedTestimonialsUse";
 
 // import { AceternityUIAnimatedTestimonialsDemo } from "@/components/ui/Aceternity/AnimatedTestimonials/AnimatedTestimonialsUSe";
 
@@ -51,7 +56,19 @@ export default function Home() {
     {/* <HeroUITimeInput/> */}
     {/* <HeroUIColoursTooltip /> */}
     {/* <HeroUIUsername /> */}
-    <AceternityUIAnimatedTestimonialsUse />
+    {/* <AceternityUIAnimatedTestimonialsUse /> */}
+    <div className="flex flex-row items-center justify-center mt-20 w-full pd-20">
+      
+    {/* <AcUIAnimatedTooltipPreview/> */}
+
+    {/* <AcUIFeaturesSectionDemo/> */}
+
+    {/* <AcUILayoutGridDemo/> */}
+    {/* <AcUIMeteorsDemo/> */}
+    {/* <AcUISidebarDemo/> */}
+    <AcUISidebarDemoUse/>
+
+    </div>
     </>
     
   );
