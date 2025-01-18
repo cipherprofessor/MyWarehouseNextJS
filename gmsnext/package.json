@@ -9,7 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroui/calendar": "^2.2.9",
+    "@heroui/date-input": "^2.3.8",
+    "@heroui/react": "^2.6.13",
+    "@heroui/system": "^2.4.6",
+    "@heroui/theme": "^2.4.5",
     "@hookform/resolvers": "^3.10.0",
+    "@internationalized/date": "^3.6.0",
     "@radix-ui/react-label": "^2.1.1",
     "@radix-ui/react-slot": "^1.1.1",
     "@radix-ui/react-toast": "^1.2.4",
