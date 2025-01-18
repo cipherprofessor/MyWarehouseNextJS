@@ -24,6 +24,12 @@ import { AcUIFeaturesSectionDemo } from "@/components/ui/Aceternity/FeatureSecti
 import { AcUILayoutGridDemo } from "@/components/ui/Aceternity/LayoutGrid/LayoutGridDemo";
 import { AcUIMeteorsDemo } from "@/components/ui/Aceternity/Meteors/MeteorsDemo";
 import { AcUISidebarDemoUse } from "@/components/ui/Aceternity/SideBar/SidebarUse";
+
+import { AcUiStickyScrollRevealDemo } from "@/components/ui/Aceternity/StickyScroll/StickyScroll";
+import { AcUITimelineDemo } from "@/components/ui/Aceternity/TimeLine/TimeLineDemo";
+import { AcUITracingBeamDemo } from "@/components/ui/Aceternity/TrackingDemo/TrackingDemo";
+import { AcUIWorldMapDemo } from "@/components/ui/Aceternity/WorldMap/WorldMap";
+import { EldoraUIAnimatedCardDemo } from "@/components/ui/eldoraui/AnimatedCard/AnimatedCardDemo";
 // import { AceternityUIAnimatedTestimonialsUse } from "@/components/ui/Aceternity/AnimatedTestimonials/AnimatedTestimonialsUse";
 
 // import { AceternityUIAnimatedTestimonialsDemo } from "@/components/ui/Aceternity/AnimatedTestimonials/AnimatedTestimonialsUSe";
@@ -43,7 +49,7 @@ export default function Home() {
     <DateInputToFrom /> */}
     {/* <HeroUIDatePickerFromTo /> */}
     {/* <HeroUIDateRangePicker /> */}
-    {/* <HeroUIForm /> */}
+    <HeroUIForm />
     {/* <HeroUIListTextIconsNumber /> */}
     {/* <HeroUIListAvtarSelection /> */}
     {/* <HeroUIDropDown2Select />  */}
@@ -66,7 +72,13 @@ export default function Home() {
     {/* <AcUILayoutGridDemo/> */}
     {/* <AcUIMeteorsDemo/> */}
     {/* <AcUISidebarDemo/> */}
-    <AcUISidebarDemoUse/>
+    {/* <AcUISidebarDemoUse/> */}
+    {/* <AcUiStickyScrollRevealDemo/> */}
+    {/* <AcUITimelineDemo/> */}
+    {/* <AcUITracingBeamDemo/> */}
+    {/* <AcUIWorldMapDemo/> */}
+    {/* <EldoraUIAnimatedCardDemo /> */}
+   
 
     </div>
     </>

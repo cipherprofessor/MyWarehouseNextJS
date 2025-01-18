@@ -1,17 +1,13 @@
-import {heroui} from '@heroui/theme';
+import { heroui } from "@heroui/theme";
 import type { Config } from "tailwindcss";
 
-const {
-	default: flattenColorPalette,
-  } = require("tailwindcss/lib/util/flattenColorPalette");
-
 export default {
-  darkMode: ["class"],
+  darkMode: ["class", "class"],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}"
+    "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
   	extend: {
@@ -55,6 +51,16 @@ export default {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
+  			},
+  			sidebar: {
+  				DEFAULT: 'hsl(var(--sidebar-background))',
+  				foreground: 'hsl(var(--sidebar-foreground))',
+  				primary: 'hsl(var(--sidebar-primary))',
+  				'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
+  				accent: 'hsl(var(--sidebar-accent))',
+  				'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
+  				border: 'hsl(var(--sidebar-border))',
+  				ring: 'hsl(var(--sidebar-ring))'
   			}
   		},
   		borderRadius: {
@@ -62,37 +68,50 @@ export default {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
-		  boxShadow: {
-			input: `0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08)`,
-		  },
-		  animation: {
-			"meteor-effect": "meteor 5s linear infinite",
-		  },
-		  keyframes: {
-			meteor: {
-			  "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
-			  "70%": { opacity: "1" },
-			  "100%": {
-				transform: "rotate(215deg) translateX(-500px)",
-				opacity: "0",
-			  },
-			},
-		  },
-  	},
-	darkMode: "class",
+  		boxShadow: {
+  			input: '0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08)'
+  		},
+  		animation: {
+  			'meteor-effect': 'meteor 5s linear infinite'
+  		},
+  		keyframes: {
+  			meteor: {
+  				'0%': {
+  					transform: 'rotate(215deg) translateX(0)',
+  					opacity: '1'
+  				},
+  				'70%': {
+  					opacity: '1'
+  				},
+  				'100%': {
+  					transform: 'rotate(215deg) translateX(-500px)',
+  					opacity: '0'
+  				}
+  			}
+  		}
+  	}
   },
-  plugins: [addVariablesForColors,require("tailwindcss-animate"),heroui()],
+  plugins: [addVariablesForColors, 
+    require("tailwindcss-animate"), 
+    heroui(),
+  ],
+    
 } satisfies Config;
 
-
-// This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
+// Custom plugin to add global CSS variables for colors
 function addVariablesForColors({ addBase, theme }: any) {
-	let allColors = flattenColorPalette(theme("colors"));
-	let newVars = Object.fromEntries(
-	  Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
-	);
-   
-	addBase({
-	  ":root": newVars,
-	});
-  }
+  const colors = theme("colors");
+  const cssVariables = Object.fromEntries(
+    Object.entries(colors).flatMap(([key, value]) => {
+      if (typeof value === "string") return [[`--${key}`, value]];
+      return Object.entries(value as Record<string, string>).map(([subKey, subValue]) => [
+        `--${key}-${subKey}`,
+        subValue,
+      ]);
+    })
+  );
+
+  addBase({
+    ":root": cssVariables,
+  });
+}
