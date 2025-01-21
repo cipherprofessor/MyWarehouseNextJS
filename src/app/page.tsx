@@ -30,6 +30,8 @@ import { AcUITimelineDemo } from "@/components/ui/Aceternity/TimeLine/TimeLineDe
 import { AcUITracingBeamDemo } from "@/components/ui/Aceternity/TrackingDemo/TrackingDemo";
 import { AcUIWorldMapDemo } from "@/components/ui/Aceternity/WorldMap/WorldMap";
 import { EldoraUIAnimatedCardDemo } from "@/components/ui/eldoraui/AnimatedCard/AnimatedCardDemo";
+import { AceternityUIAnimatedTestimonialsUse } from "@/components/ui/Aceternity/AnimatedTestimonials/AnimatedTestimonialsUse";
+import { AcUISidebarDemo } from "@/components/ui/Aceternity/SideBar/SideBarDemo";
 // import { AceternityUIAnimatedTestimonialsUse } from "@/components/ui/Aceternity/AnimatedTestimonials/AnimatedTestimonialsUse";
 
 // import { AceternityUIAnimatedTestimonialsDemo } from "@/components/ui/Aceternity/AnimatedTestimonials/AnimatedTestimonialsUSe";
@@ -42,42 +44,42 @@ export default function Home() {
       
     // </div>
     <>
-    {/* <SidebarDemo /> */}
+    <SidebarDemo />
 
-    {/* <Button>Click me</Button> */}
-    {/* <HeroUICalendar />
-    <DateInputToFrom /> */}
-    {/* <HeroUIDatePickerFromTo /> */}
-    {/* <HeroUIDateRangePicker /> */}
+    <Button>Click me</Button>
+    <HeroUICalendar />
+    <DateInputToFrom />
+    <HeroUIDatePickerFromTo />
+    <HeroUIDateRangePicker />
     <HeroUIForm />
-    {/* <HeroUIListTextIconsNumber /> */}
-    {/* <HeroUIListAvtarSelection /> */}
-    {/* <HeroUIDropDown2Select />  */}
-    {/* <HeroUiDropDownAssignTo /> */}
-    {/* <HeroUISwitchDarkLightModeIcon /> */}
-    {/* <HeroUIModernTableSearch /> */}
-    {/* <HeroUITabWithForm /> */}
-    {/* <HeroUIJustTabs/> */}
-    {/* <HeroUITextDescription /> */}
-    {/* <HeroUITimeInput/> */}
-    {/* <HeroUIColoursTooltip /> */}
-    {/* <HeroUIUsername /> */}
-    {/* <AceternityUIAnimatedTestimonialsUse /> */}
+    <HeroUIListTextIconsNumber /> 
+    <HeroUIListAvtarSelection /> 
+    <HeroUIDropDown2Select />  
+     <HeroUiDropDownAssignTo /> 
+     <HeroUISwitchDarkLightModeIcon /> 
+     <HeroUIModernTableSearch /> 
+     <HeroUITabWithForm /> 
+     <HeroUIJustTabs/> 
+     <HeroUITextDescription /> 
+     <HeroUITimeInput/> 
+     <HeroUIColoursTooltip />
+     <HeroUIUsername />
+     <AceternityUIAnimatedTestimonialsUse />
     <div className="flex flex-row items-center justify-center mt-20 w-full pd-20">
       
-    {/* <AcUIAnimatedTooltipPreview/> */}
+    <AcUIAnimatedTooltipPreview/>
 
-    {/* <AcUIFeaturesSectionDemo/> */}
+    <AcUIFeaturesSectionDemo/>
 
-    {/* <AcUILayoutGridDemo/> */}
-    {/* <AcUIMeteorsDemo/> */}
-    {/* <AcUISidebarDemo/> */}
-    {/* <AcUISidebarDemoUse/> */}
-    {/* <AcUiStickyScrollRevealDemo/> */}
-    {/* <AcUITimelineDemo/> */}
-    {/* <AcUITracingBeamDemo/> */}
-    {/* <AcUIWorldMapDemo/> */}
-    {/* <EldoraUIAnimatedCardDemo /> */}
+    <AcUILayoutGridDemo/>
+    <AcUIMeteorsDemo/>
+     <AcUISidebarDemo/>
+     <AcUISidebarDemoUse/>
+     <AcUiStickyScrollRevealDemo/>
+     <AcUITimelineDemo/> 
+     <AcUITracingBeamDemo/>
+     <AcUIWorldMapDemo/>
+     <EldoraUIAnimatedCardDemo />
    
 
     </div>
