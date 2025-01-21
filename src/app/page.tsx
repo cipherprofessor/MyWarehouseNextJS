@@ -1,7 +1,7 @@
-"use client"
+"use client";
 import { SidebarDemo } from "@/components/ui/Aceternity/SideMenu/SidebarDemo";
 import Image from "next/image";
-import {Button} from '@heroui/button'; 
+import { Button } from "@heroui/button";
 import HeroUICalendar from "@/components/ui/HeroUI/Calendar/Calendar";
 import DateInputToFrom from "@/components/ui/HeroUI/DateInput/DateInputToFrom";
 import HeroUIDatePickerFromTo from "@/components/ui/HeroUI/DatePicker/DatePicker";
@@ -32,6 +32,11 @@ import { AcUIWorldMapDemo } from "@/components/ui/Aceternity/WorldMap/WorldMap";
 import { EldoraUIAnimatedCardDemo } from "@/components/ui/eldoraui/AnimatedCard/AnimatedCardDemo";
 import { AceternityUIAnimatedTestimonialsUse } from "@/components/ui/Aceternity/AnimatedTestimonials/AnimatedTestimonialsUse";
 import { AcUISidebarDemo } from "@/components/ui/Aceternity/SideBar/SideBarDemo";
+import HeroUIJustTabs2 from "@/components/ui/HeroUI/Tabs/JustTabs2";
+import HeroUIJustTabs3 from "@/components/ui/HeroUI/Tabs/JustTabs3";
+import HeroUIJustTabs4 from "@/components/ui/HeroUI/Tabs/JustTabs4";
+import HeroUIJustTabs5 from "@/components/ui/HeroUI/Tabs/JustTabs5";
+import HeroUIJustTabs6 from "@/components/ui/HeroUI/Tabs/JustTabs6";
 // import { AceternityUIAnimatedTestimonialsUse } from "@/components/ui/Aceternity/AnimatedTestimonials/AnimatedTestimonialsUse";
 
 // import { AceternityUIAnimatedTestimonialsDemo } from "@/components/ui/Aceternity/AnimatedTestimonials/AnimatedTestimonialsUSe";
@@ -40,50 +45,17 @@ export default function Home() {
   return (
     // <div >
     //   Welcome To Next JS Repo with MongoDB
-     
-      
+
     // </div>
     <>
-    <SidebarDemo />
-
-    <Button>Click me</Button>
-    <HeroUICalendar />
-    <DateInputToFrom />
-    <HeroUIDatePickerFromTo />
-    <HeroUIDateRangePicker />
-    <HeroUIForm />
-    <HeroUIListTextIconsNumber /> 
-    <HeroUIListAvtarSelection /> 
-    <HeroUIDropDown2Select />  
-     <HeroUiDropDownAssignTo /> 
-     <HeroUISwitchDarkLightModeIcon /> 
-     <HeroUIModernTableSearch /> 
-     <HeroUITabWithForm /> 
-     <HeroUIJustTabs/> 
-     <HeroUITextDescription /> 
-     <HeroUITimeInput/> 
-     <HeroUIColoursTooltip />
-     <HeroUIUsername />
-     <AceternityUIAnimatedTestimonialsUse />
-    <div className="flex flex-row items-center justify-center mt-20 w-full pd-20">
-      
-    <AcUIAnimatedTooltipPreview/>
-
-    <AcUIFeaturesSectionDemo/>
-
-    <AcUILayoutGridDemo/>
-    <AcUIMeteorsDemo/>
-     <AcUISidebarDemo/>
-     <AcUISidebarDemoUse/>
-     <AcUiStickyScrollRevealDemo/>
-     <AcUITimelineDemo/> 
-     <AcUITracingBeamDemo/>
-     <AcUIWorldMapDemo/>
-     <EldoraUIAnimatedCardDemo />
-   
-
-    </div>
+      <div className="flex flex-col items-center justify-center m-20 w-full p-20">
+        <HeroUIJustTabs />
+        <HeroUIJustTabs2 />
+        <HeroUIJustTabs3 />
+        <HeroUIJustTabs4 />
+        <HeroUIJustTabs5 />
+        <HeroUIJustTabs6 />
+      </div>
     </>
-    
   );
 }

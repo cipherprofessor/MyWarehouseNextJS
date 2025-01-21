@@ -28,86 +28,24 @@ import HeroUITextDescription from "../TextArea/Description";
 import HeroUITimeInput from "../TimeInput/TimeInput";
 import HeroUIColoursTooltip from "../Tooltip/ColorsTooltip";
 import HeroUIUsername from "../User/UserName";
+import HeroUIJustTabs from "./JustTabs";
 
-export default function HeroUIJustTabs() {
+export default function HeroUIJustTabs5() {
   const [selected, setSelected] = React.useState("photos");
 
   return (
     <div className="flex w-full flex-col">
       <Tabs aria-label="Options" selectedKey={selected} onSelectionChange={(key) => setSelected(key.toString())}>
-      <Tab key="HeroUIListTextIconsNumber" title="HeroUIListTextIconsNumber">
-          <Card>
-            <CardBody>
-            <HeroUIListTextIconsNumber /> 
-            </CardBody>
-          </Card>
-        </Tab>
-        <Tab key="photos" title="Photos">
-          <Card>
-            <CardBody>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </CardBody>
-          </Card>
-        </Tab>
-        <Tab key="SidebarDemo" title="SidebarDemo">
-          <Card>
-            <CardBody>
-            <SidebarDemo />
-            </CardBody>
-          </Card>
-        </Tab>
-        <Tab key="DateInputToFrom" title="DateInputToFrom">
-          <Card>
-            <CardBody>
-            <DateInputToFrom />
-            </CardBody>
-          </Card>
-        </Tab>
-        <Tab key="HeroUICalendar" title="HeroUICalendar">
-          <Card>
-            <CardBody>
-            <HeroUICalendar />
-            </CardBody>
-          </Card>
-        </Tab>
-        <Tab key="HeroUIDateRangePicker" title="HeroUIDateRangePicker">
-          <Card>
-            <CardBody>
-            <HeroUIDateRangePicker />
-            </CardBody>
-          </Card>
-        </Tab>
-        <Tab key="HeroUIForm" title="HeroUIForm">
-          <Card>
-            <CardBody>
-            <HeroUIForm />
-            </CardBody>
-          </Card>
-        </Tab>
         
-        <Tab key="HeroUIListAvtarSelection" title="HeroUIListAvtarSelection">
+        <Tab key="Demo" title="Demo">
           <Card>
             <CardBody>
-            <HeroUIListAvtarSelection /> 
+              
             </CardBody>
           </Card>
         </Tab>
-        <Tab key="HeroUIDropDown2Select" title="HeroUIDropDown2Select">
-          <Card>
-            <CardBody>
-            <HeroUIDropDown2Select /> 
-            </CardBody>
-          </Card>
-        </Tab>
-        <Tab key="HeroUiDropDownAssignTo" title="HeroUiDropDownAssignTo">
-          <Card>
-            <CardBody>
-            <HeroUiDropDownAssignTo /> 
-            </CardBody>
-          </Card>
-        </Tab>
+
+
       </Tabs>
     </div>
   );

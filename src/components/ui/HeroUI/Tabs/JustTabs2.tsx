@@ -28,83 +28,75 @@ import HeroUITextDescription from "../TextArea/Description";
 import HeroUITimeInput from "../TimeInput/TimeInput";
 import HeroUIColoursTooltip from "../Tooltip/ColorsTooltip";
 import HeroUIUsername from "../User/UserName";
+import HeroUIJustTabs from "./JustTabs";
 
-export default function HeroUIJustTabs() {
+export default function HeroUIJustTabs2() {
   const [selected, setSelected] = React.useState("photos");
 
   return (
     <div className="flex w-full flex-col">
       <Tabs aria-label="Options" selectedKey={selected} onSelectionChange={(key) => setSelected(key.toString())}>
-      <Tab key="HeroUIListTextIconsNumber" title="HeroUIListTextIconsNumber">
-          <Card>
-            <CardBody>
-            <HeroUIListTextIconsNumber /> 
-            </CardBody>
-          </Card>
-        </Tab>
-        <Tab key="photos" title="Photos">
-          <Card>
-            <CardBody>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </CardBody>
-          </Card>
-        </Tab>
-        <Tab key="SidebarDemo" title="SidebarDemo">
-          <Card>
-            <CardBody>
-            <SidebarDemo />
-            </CardBody>
-          </Card>
-        </Tab>
-        <Tab key="DateInputToFrom" title="DateInputToFrom">
-          <Card>
-            <CardBody>
-            <DateInputToFrom />
-            </CardBody>
-          </Card>
-        </Tab>
-        <Tab key="HeroUICalendar" title="HeroUICalendar">
-          <Card>
-            <CardBody>
-            <HeroUICalendar />
-            </CardBody>
-          </Card>
-        </Tab>
-        <Tab key="HeroUIDateRangePicker" title="HeroUIDateRangePicker">
-          <Card>
-            <CardBody>
-            <HeroUIDateRangePicker />
-            </CardBody>
-          </Card>
-        </Tab>
-        <Tab key="HeroUIForm" title="HeroUIForm">
-          <Card>
-            <CardBody>
-            <HeroUIForm />
-            </CardBody>
-          </Card>
-        </Tab>
         
-        <Tab key="HeroUIListAvtarSelection" title="HeroUIListAvtarSelection">
+        <Tab key="HeroUISwitchDarkLightModeIcon" title="HeroUISwitchDarkLightModeIcon">
           <Card>
             <CardBody>
-            <HeroUIListAvtarSelection /> 
+            <HeroUISwitchDarkLightModeIcon /> 
             </CardBody>
           </Card>
         </Tab>
-        <Tab key="HeroUIDropDown2Select" title="HeroUIDropDown2Select">
+        <Tab key="HeroUIModernTableSearch " title="HeroUIModernTableSearch ">
           <Card>
             <CardBody>
-            <HeroUIDropDown2Select /> 
+            <HeroUIModernTableSearch />
             </CardBody>
           </Card>
         </Tab>
-        <Tab key="HeroUiDropDownAssignTo" title="HeroUiDropDownAssignTo">
+        <Tab key="HeroUITabWithForm" title="HeroUITabWithForm">
           <Card>
             <CardBody>
-            <HeroUiDropDownAssignTo /> 
+            <HeroUITabWithForm /> 
+            </CardBody>
+          </Card>
+        </Tab>
+        <Tab key="HeroUIJustTabs" title="HeroUIJustTabs">
+          <Card>
+            <CardBody>
+            <HeroUIJustTabs/> 
+            </CardBody>
+          </Card>
+        </Tab>
+        <Tab key="Button" title="Button">
+          <Card>
+            <CardBody>
+            <Button>Click me</Button>
+            </CardBody>
+          </Card>
+        </Tab>
+        <Tab key="HeroUITextDescription" title="HeroUITextDescription">
+          <Card>
+            <CardBody>
+            <HeroUITextDescription /> 
+            </CardBody>
+          </Card>
+        </Tab>
+        <Tab key="HeroUITimeInput" title="HeroUITimeInput">
+          <Card>
+            <CardBody>
+            <HeroUITimeInput/> 
+            </CardBody>
+          </Card>
+        </Tab>
+        <Tab key="HeroUIColoursTooltip" title="HeroUIColoursTooltip">
+          <Card>
+            <CardBody>
+            <HeroUIColoursTooltip />
+            </CardBody>
+          </Card>
+        </Tab>
+        <Tab key="HeroUIUsername" title="HeroUIUsername">
+          <Card>
+            <CardBody>
+            <HeroUIUsername />
             </CardBody>
           </Card>
         </Tab>

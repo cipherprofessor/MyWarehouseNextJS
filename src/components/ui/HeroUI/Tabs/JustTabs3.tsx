@@ -28,83 +28,67 @@ import HeroUITextDescription from "../TextArea/Description";
 import HeroUITimeInput from "../TimeInput/TimeInput";
 import HeroUIColoursTooltip from "../Tooltip/ColorsTooltip";
 import HeroUIUsername from "../User/UserName";
+import HeroUIJustTabs from "./JustTabs";
 
-export default function HeroUIJustTabs() {
+export default function HeroUIJustTabs3() {
   const [selected, setSelected] = React.useState("photos");
 
   return (
     <div className="flex w-full flex-col">
       <Tabs aria-label="Options" selectedKey={selected} onSelectionChange={(key) => setSelected(key.toString())}>
-      <Tab key="HeroUIListTextIconsNumber" title="HeroUIListTextIconsNumber">
+        <Tab key="AceternityUIAnimatedTestimonialsUse" title="AceternityUIAnimatedTestimonialsUse">
           <Card>
             <CardBody>
-            <HeroUIListTextIconsNumber /> 
+            <AceternityUIAnimatedTestimonialsUse />
             </CardBody>
           </Card>
         </Tab>
-        <Tab key="photos" title="Photos">
+        <Tab key="AcUIAnimatedTooltipPreview" title="AcUIAnimatedTooltipPreview">
           <Card>
             <CardBody>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <AcUIAnimatedTooltipPreview/>
             </CardBody>
           </Card>
         </Tab>
-        <Tab key="SidebarDemo" title="SidebarDemo">
+        <Tab key="AcUIFeaturesSectionDemo" title="AcUIFeaturesSectionDemo">
           <Card>
             <CardBody>
-            <SidebarDemo />
+            <AcUIFeaturesSectionDemo/>
             </CardBody>
           </Card>
         </Tab>
-        <Tab key="DateInputToFrom" title="DateInputToFrom">
+        <Tab key="AcUILayoutGridDemo" title="AcUILayoutGridDemo">
           <Card>
             <CardBody>
-            <DateInputToFrom />
+            <AcUILayoutGridDemo/>
             </CardBody>
           </Card>
         </Tab>
-        <Tab key="HeroUICalendar" title="HeroUICalendar">
+        <Tab key="AcUIMeteorsDemo" title="AcUIMeteorsDemo">
           <Card>
             <CardBody>
-            <HeroUICalendar />
+            <AcUIMeteorsDemo/>
             </CardBody>
           </Card>
         </Tab>
-        <Tab key="HeroUIDateRangePicker" title="HeroUIDateRangePicker">
+        <Tab key="AcUISidebarDemo" title="AcUISidebarDemo">
           <Card>
             <CardBody>
-            <HeroUIDateRangePicker />
+            <AcUISidebarDemo/>
             </CardBody>
           </Card>
         </Tab>
-        <Tab key="HeroUIForm" title="HeroUIForm">
+        <Tab key="AcUISidebarDemoUse" title="AcUISidebarDemoUse">
           <Card>
             <CardBody>
-            <HeroUIForm />
+            <AcUISidebarDemoUse/>
             </CardBody>
           </Card>
         </Tab>
-        
-        <Tab key="HeroUIListAvtarSelection" title="HeroUIListAvtarSelection">
+        <Tab key="AcUiStickyScrollRevealDemo" title="AcUiStickyScrollRevealDemo">
           <Card>
             <CardBody>
-            <HeroUIListAvtarSelection /> 
-            </CardBody>
-          </Card>
-        </Tab>
-        <Tab key="HeroUIDropDown2Select" title="HeroUIDropDown2Select">
-          <Card>
-            <CardBody>
-            <HeroUIDropDown2Select /> 
-            </CardBody>
-          </Card>
-        </Tab>
-        <Tab key="HeroUiDropDownAssignTo" title="HeroUiDropDownAssignTo">
-          <Card>
-            <CardBody>
-            <HeroUiDropDownAssignTo /> 
+            <AcUiStickyScrollRevealDemo/>
             </CardBody>
           </Card>
         </Tab>
