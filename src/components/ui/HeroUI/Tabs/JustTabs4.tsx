@@ -29,6 +29,9 @@ import HeroUITimeInput from "../TimeInput/TimeInput";
 import HeroUIColoursTooltip from "../Tooltip/ColorsTooltip";
 import HeroUIUsername from "../User/UserName";
 import HeroUIJustTabs from "./JustTabs";
+import { AcUiBentoGrid } from "../../Aceternity/BentoGrid/BentoGrid";
+import { BentoGridtextImages } from "../../eldoraui/BentoGridTxtImg/BentoGridTxtImg";
+import { EldoraPricingSection } from "../../eldoraui/Pricing/Pricing";
 
 export default function HeroUIJustTabs4() {
   const [selected, setSelected] = React.useState("photos");
@@ -64,10 +67,24 @@ export default function HeroUIJustTabs4() {
             </CardBody>
           </Card>
         </Tab>
-        <Tab key="" title="">
+        <Tab key="AcUiBentoGrid" title="AcUiBentoGrid">
           <Card>
             <CardBody>
-              
+            <AcUiBentoGrid/>
+            </CardBody>
+          </Card>
+        </Tab>
+        <Tab key="BentoGridtextImages" title="BentoGridtextImages">
+          <Card>
+            <CardBody>
+            <BentoGridtextImages/>
+            </CardBody>
+          </Card>
+        </Tab>
+        <Tab key="EldoraPricingSection" title="EldoraPricingSection">  
+          <Card>
+            <CardBody>
+            <EldoraPricingSection/>
             </CardBody>
           </Card>
         </Tab>
