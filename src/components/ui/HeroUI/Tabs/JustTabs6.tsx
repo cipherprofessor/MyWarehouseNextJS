@@ -34,6 +34,7 @@ import CheckBoxGroupCard from "../Checkbox/CheckBoxGroupCard";
 import ChipColours from "../Chip/ChipColours";
 import ChipVariants from "../Chip/Chipvariants";
 import StartEndIconChip from "../Chip/StartEndIconChip";
+import DropDownDescriptionIcon from "../DropDownSelect/DropDownDescriptionIcon";
 
 export default function HeroUIJustTabs5() {
   const [selected, setSelected] = React.useState("photos");
@@ -85,10 +86,10 @@ export default function HeroUIJustTabs5() {
         </Tab>
 
 
-        <Tab key="" title="">  
+        <Tab key="DropDownDescriptionIcon" title="DropDownDescriptionIcon">  
           <Card>
             <CardBody>
-            
+            <DropDownDescriptionIcon/>
             </CardBody>
           </Card>
         </Tab>
