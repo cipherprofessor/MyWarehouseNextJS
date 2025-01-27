@@ -32,6 +32,8 @@ import HeroUIJustTabs from "./JustTabs";
 import { AcUiBentoGrid } from "../../Aceternity/BentoGrid/BentoGrid";
 import { BentoGridtextImages } from "../../eldoraui/BentoGridTxtImg/BentoGridTxtImg";
 import { EldoraPricingSection } from "../../eldoraui/Pricing/Pricing";
+import AutocompleteUsers from "../../Aceternity/Autocomplete/AutocompleteUsers";
+import DynamicItemAutocomplete from "../../Aceternity/Autocomplete/DynamicItemAutocomplete";
 
 export default function HeroUIJustTabs4() {
   const [selected, setSelected] = React.useState("photos");
@@ -85,6 +87,38 @@ export default function HeroUIJustTabs4() {
           <Card>
             <CardBody>
             <EldoraPricingSection/>
+            </CardBody>
+          </Card>
+        </Tab>
+
+        <Tab key="AutocompleteUsers" title="AutocompleteUsers">  
+          <Card>
+            <CardBody>
+            <AutocompleteUsers />
+            </CardBody>
+          </Card>
+        </Tab>
+
+        <Tab key="DynamicItemAutocomplete" title="DynamicItemAutocomplete">  
+          <Card>
+            <CardBody>
+            <DynamicItemAutocomplete/>
+            </CardBody>
+          </Card>
+        </Tab>
+
+        <Tab key="" title="">  
+          <Card>
+            <CardBody>
+            
+            </CardBody>
+          </Card>
+        </Tab>
+
+        <Tab key="" title="">  
+          <Card>
+            <CardBody>
+            
             </CardBody>
           </Card>
         </Tab>
