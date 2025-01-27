@@ -29,6 +29,11 @@ import HeroUITimeInput from "../TimeInput/TimeInput";
 import HeroUIColoursTooltip from "../Tooltip/ColorsTooltip";
 import HeroUIUsername from "../User/UserName";
 import HeroUIJustTabs from "./JustTabs";
+import EnableDisableHookCheckbox from "../Checkbox/EnableDisableHookCheckbox";
+import CheckBoxGroupCard from "../Checkbox/CheckBoxGroupCard";
+import ChipColours from "../Chip/ChipColours";
+import ChipVariants from "../Chip/Chipvariants";
+import StartEndIconChip from "../Chip/StartEndIconChip";
 
 export default function HeroUIJustTabs5() {
   const [selected, setSelected] = React.useState("photos");
@@ -37,13 +42,66 @@ export default function HeroUIJustTabs5() {
     <div className="flex w-full flex-col">
       <Tabs aria-label="Options" selectedKey={selected} onSelectionChange={(key) => setSelected(key.toString())}>
         
-        <Tab key="Demo" title="Demo">
+      <Tab key="EnableDisableHookCheckbox" title="EnableDisableHookCheckbox">  
           <Card>
             <CardBody>
-              
+            <EnableDisableHookCheckbox/>
             </CardBody>
           </Card>
         </Tab>
+
+
+
+        <Tab key="CheckBoxGroupCard" title="CheckBoxGroupCard">  
+          <Card>
+            <CardBody>
+            <CheckBoxGroupCard/>
+            </CardBody>
+          </Card>
+        </Tab>
+
+        <Tab key="ChipColours" title="ChipColours">  
+          <Card>
+            <CardBody>
+            <ChipColours/>
+            </CardBody>
+          </Card>
+        </Tab>
+
+        <Tab key="ChipVariants" title="ChipVariants">  
+          <Card>
+            <CardBody>
+            <ChipVariants/>
+            </CardBody>
+          </Card>
+        </Tab>
+
+        <Tab key="StartEndIconChip" title="StartEndIconChip">  
+          <Card>
+            <CardBody>
+            <StartEndIconChip/>
+            </CardBody>
+          </Card>
+        </Tab>
+
+
+        <Tab key="" title="">  
+          <Card>
+            <CardBody>
+            
+            </CardBody>
+          </Card>
+        </Tab>
+
+
+        <Tab key="" title="">  
+          <Card>
+            <CardBody>
+            
+            </CardBody>
+          </Card>
+        </Tab>
+
 
 
       </Tabs>

@@ -35,6 +35,10 @@ import BreadCrumbsRadius from "../BreadCumbs/BreadCrumbsRadius";
 import BreadCrumbsColour from "../BreadCumbs/BreadCrumbsColour";
 import ButtonsWithicons from "../Buttons/ButtonsWithicons";
 import ChervonDropDownButton from "../Buttons/ChervonDropDownButton";
+import MonthYearPickerCalendar from "../Calendar/MonthYearPickerCalendar";
+import CheckboxColours from "../Checkbox/CheckboxColours";
+import CustomCardCheckbox from "../Checkbox/CustomCardCheckbox";
+import EnableDisableHookCheckbox from "../Checkbox/EnableDisableHookCheckbox";
 
 export default function HeroUIJustTabs5() {
   const [selected, setSelected] = React.useState("photos");
@@ -94,6 +98,33 @@ export default function HeroUIJustTabs5() {
           </Card>
         </Tab>
 
+        
+
+        <Tab key="MonthYearPickerCalendar" title="MonthYearPickerCalendar">  
+          <Card>
+            <CardBody>
+            <MonthYearPickerCalendar/>
+            </CardBody>
+          </Card>
+        </Tab>
+
+
+        <Tab key="CheckboxColours" title="CheckboxColours">  
+          <Card>
+            <CardBody>
+            <CheckboxColours/>
+            </CardBody>
+          </Card>
+        </Tab>
+
+
+        <Tab key="CustomCardCheckbox" title="CustomCardCheckbox">  
+          <Card>
+            <CardBody>
+            <CustomCardCheckbox/>
+            </CardBody>
+          </Card>
+        </Tab>
       </Tabs>
     </div>
   );
