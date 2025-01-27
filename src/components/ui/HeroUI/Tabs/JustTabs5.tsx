@@ -29,6 +29,12 @@ import HeroUITimeInput from "../TimeInput/TimeInput";
 import HeroUIColoursTooltip from "../Tooltip/ColorsTooltip";
 import HeroUIUsername from "../User/UserName";
 import HeroUIJustTabs from "./JustTabs";
+import BadgeNotificationIcon from "../Badge/NotificationIcon";
+import BreadCrumbsUnderline from "../BreadCumbs/BreadCrumbsUnderline";
+import BreadCrumbsRadius from "../BreadCumbs/BreadCrumbsRadius";
+import BreadCrumbsColour from "../BreadCumbs/BreadCrumbsColour";
+import ButtonsWithicons from "../Buttons/ButtonsWithicons";
+import ChervonDropDownButton from "../Buttons/ChervonDropDownButton";
 
 export default function HeroUIJustTabs5() {
   const [selected, setSelected] = React.useState("photos");
@@ -37,14 +43,56 @@ export default function HeroUIJustTabs5() {
     <div className="flex w-full flex-col">
       <Tabs aria-label="Options" selectedKey={selected} onSelectionChange={(key) => setSelected(key.toString())}>
         
-        <Tab key="Demo" title="Demo">
+        <Tab key="BreadCrumbsUnderline" title="BreadCrumbsUnderline">
           <Card>
             <CardBody>
-              
+              <BreadCrumbsUnderline/>
             </CardBody>
           </Card>
         </Tab>
 
+        <Tab key="BadgeNotificationIcon" title="BadgeNotificationIcon">  
+          <Card>
+            <CardBody>
+            <BadgeNotificationIcon/>
+            </CardBody>
+          </Card>
+        </Tab>
+
+        
+
+        <Tab key="BreadCrumbsRadius" title="BreadCrumbsRadius">  
+          <Card>
+            <CardBody>
+            <BreadCrumbsRadius/>
+            </CardBody>
+          </Card>
+        </Tab>
+
+        <Tab key="BreadCrumbsColour" title="BreadCrumbsColour">  
+          <Card>
+            <CardBody>
+            <BreadCrumbsColour/>
+            </CardBody>
+          </Card>
+        </Tab>
+
+
+        <Tab key="ButtonsWithicons" title="ButtonsWithicons">  
+          <Card>
+            <CardBody>
+            <ButtonsWithicons/>
+            </CardBody>
+          </Card>
+        </Tab>
+
+        <Tab key="ChervonDropDownButton" title="ChervonDropDownButton">  
+          <Card>
+            <CardBody>
+            <ChervonDropDownButton/>
+            </CardBody>
+          </Card>
+        </Tab>
 
       </Tabs>
     </div>
