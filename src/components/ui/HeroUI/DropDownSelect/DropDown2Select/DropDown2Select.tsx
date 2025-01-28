@@ -12,7 +12,7 @@ export const animals = [
   {key: "zebra", label: "Zebra"},
   {key: "shark", label: "Shark"},
   {key: "whale", label: "Whale"},
-  {key: "otter", label: "Otter"},
+  {key: "otter", label: "Otter"}, 
   {key: "crocodile", label: "Crocodile"},
 ];
 
